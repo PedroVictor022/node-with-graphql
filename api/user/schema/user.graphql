@@ -13,10 +13,16 @@ const userSchema = gql`
       type: String!
    }
 
+   # Executa consulta
    type Query {
       users: [User]
       user(id: ID!): User!
    }
+   # Executa operacoes
+   type Mutation {
+      adicionaUser(name: String!, active: Boolean!, email: String, role: String!): User!
+   }
+
 
 `
 
