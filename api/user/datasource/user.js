@@ -26,4 +26,6 @@ class UsersAPI extends RESTDataSource {
    
 }
 
+console.log('teste');
+
 module.exports = UsersAPI;
